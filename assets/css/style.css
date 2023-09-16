@@ -18,14 +18,105 @@
 
 
 --------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
 body {
   background-color: #bebebeb2;
   color: #0f0e0e;
 }
 
-h9{
 
-}
+
+
+
+
+
+
+/*-------------------------------------------------------
+
+
+
+.cc-profile-image a {
+  position: relative; }
+*/
+/* Profile Image Style */
+@-webkit-keyframes pulsate {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 0.0; }
+  50% {
+    opacity: 1.0; }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1.0; } }
+@keyframes pulsate {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 0.0; }
+  50% {
+    opacity: 1.0; }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1.0; } }
+
+    .cc-profile-image a {
+      position: relative; }
+    
+    .cc-profile-image a:before {
+      content: "";
+      border: 15px solid rgb(30, 255, 5);
+      border-radius: 120%;
+      height: 240px;
+      width: 240px;
+      position: absolute;
+      left: 0;
+      -webkit-animation: pulsate 1s ease-out;
+              animation: pulsate 1s ease-out;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      opacity: 1;
+      z-index: 99; }
+    
+    .cc-profile-image img {
+      position: relative;
+      border-radius: 80%;
+      height: 240px;
+      width: 240px;
+      padding: 0;
+      margin: 0;
+      border: 15px solid transparent;
+      z-index: 9999;
+      transition: all .3s ease-out; }
+    
+    .cc-profile-image a:hover img {
+      transform: scale(1.06, 1.06); }
+    
+    .cc-profile-image a:hover:before {
+      -webkit-animation: none;
+              animation: none; }
+    
+
+
+
+
+/*----------------------------------------------------------*/
+
+
+
+
+
+
+
+
 
 h1,
 h2,
@@ -160,7 +251,6 @@ a:hover {
   font-weight: 600;
   color: #1e1e1e;
   font-size: 1.1rem;
-font-family: Arial, Helvetica, sans-serif;
 }
 
 /*--/ Title A /--*/
@@ -214,7 +304,7 @@ font-family: Arial, Helvetica, sans-serif;
 .box-shadow-full {
   padding: 3rem 1.25rem;
   position: relative;
-  background-color: #fff;
+  background-color: #ffffff;
   margin-bottom: 3rem;
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
@@ -846,6 +936,7 @@ font-family: Arial, Helvetica, sans-serif;
 
 .about-mf .about-img {
   margin-bottom: 2rem;
+
 }
 
 .about-mf .about-img img {
