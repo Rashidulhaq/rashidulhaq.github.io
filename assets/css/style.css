@@ -23,7 +23,9 @@ body {
   color: #0f0e0e;
 }
 
+h9{
 
+}
 
 h1,
 h2,
@@ -158,6 +160,7 @@ a:hover {
   font-weight: 600;
   color: #1e1e1e;
   font-size: 1.1rem;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 /*--/ Title A /--*/
