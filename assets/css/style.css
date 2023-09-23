@@ -19,19 +19,79 @@
 
 --------------------------------------------------------------*/
 
+:root {
+  --primary-color: #f9532d;
+  --primary-dark: #1F252E;
+}
+.mode i {
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+.mode input {
+  display: none;
+}
+.dark-mode header {
+  box-shadow: 0 4px 17px rgb(80 80 80 / 31%);
+  background: var(--primary-dark);
+}
+
+
+/* Default light mode styles */
+
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #333333;
+  color: #ffffff;
+
+  .box-shadow-full {
+    padding: 3rem 1.25rem;
+    position: relative;
+    background-color: #5a5656;
+    margin-bottom: 3rem;
+    z-index: 2;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  }
 
 
 
 
 
+  .card {
+    color: #ffffff;
+    padding: 0 15px 5px;
+    overflow: hidden;
+    background-color: #5a5656;
+    border-radius: 4px;
+  }
+  
 
+  .work-content {
+    background-color: #5a5656;
+    color: #efefef;
 
+    
+  }
+  .w-date{
+    color: #efe7e7;
+  }
+  .w-title{
+    color: #ffffff;
+  }
 
+  .service-box{
+    background-color:#5a5656 ;
+  }
 
+  .s-description{
+    color: #ffffff;
+  }
+  .s-title{
+    color: #ffffff;
+  }
 
-body {
-  background-color: #bebebeb2;
-  color: #0f0e0e;
+  
 }
 
 
@@ -40,8 +100,10 @@ body {
 
 
 
+  
 
 /*-------------------------------------------------------
+
 
 
 
@@ -49,6 +111,13 @@ body {
   position: relative; }
 */
 /* Profile Image Style */
+
+body {
+  background-color: #bebebeb2;
+  color: #0f0e0e;
+}
+
+
 @-webkit-keyframes pulsate {
   0% {
     transform: scale(0.6, 0.6);
@@ -73,7 +142,7 @@ body {
     
     .cc-profile-image a:before {
       content: "";
-      border: 15px solid rgb(30, 255, 5);
+      border: 5px solid rgb(30, 255, 5);
       border-radius: 120%;
       height: 240px;
       width: 240px;
